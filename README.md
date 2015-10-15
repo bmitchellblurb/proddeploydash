@@ -1,2 +1,1 @@
-# proddeploydash
-Dashboard configuration for prod deployment visibility using dashing ruby project
+Check out http://shopify.github.com/dashing for more information.
