@@ -1,0 +1,14 @@
+<% content_for :title do %>Blurb Production Deployments<% end %>
+<div class="gridster">
+  <ul>
+    <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
+      <div data-id="activerelease" data-view="Text" data-title="Active Release" data-text="No Current Deploys" data-moreinfo="more info notes etc"></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="2" data-sizey="2">
+      <div data-id="recentdeploys" data-view="List" data-unordered="true" data-title="Recent Production Deployments" data-moreinfo="more info"></div>
+    </li>
+
+  </ul>
+  <center><div style="font-size: 12px">Try this: curl -d '{ "auth_token": "YOUR_AUTH_TOKEN", "text": "Hey, Look what I can do!" }' \http://<%=request.host%>:<%=request.port%>/widgets/activerelease</div></center>
+</div>
